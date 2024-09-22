@@ -21,10 +21,10 @@ jobs:
 
       # ./gradlew -b (batch Mode : means there will be no interactive mode), build.gradle (build file with correct path, its necessary when the build file is not in the root directory), test (gradlew test task name)
       - name: Unit Test
-        run: ./gradlew -b build.gradle test
+        run: gradle -b build.gradle test
 
       - name: Build with Gradle
-        run: ./gradlew -b build.gradle build
+        run: gradle -b build.gradle build
 
       - name: Build Docker image
         uses: docker/build-push-action@v2
