@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: 21
-          distribution: 'openjdk'
+          distribution: 'coretto'
 
       # ./gradlew -b (batch Mode : means there will be no interactive mode), build.gradle (build file with correct path, its necessary when the build file is not in the root directory), test (gradlew test task name)
       - name: Unit Test
